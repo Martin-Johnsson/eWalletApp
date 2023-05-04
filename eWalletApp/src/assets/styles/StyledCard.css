@@ -1,0 +1,15 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  margin: 0 auto;
+}
+.delete_icon {
+  font-size: 2.6rem;
+  color: var(--mainIcon);
+  cursor: pointer;
+}
+.delete_icon:hover {
+  color: black;
+}

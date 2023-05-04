@@ -1,0 +1,17 @@
+:root {
+  --primaryColor: #202535; /* variabel för background färg*/
+  --mainText: #d8b0b0; /* variabel för text färg*/
+  --mainIcon: #d99bff; /* variabel för icons färg*/
+  --mainForm: #c0c6c9; /* variabel för inputs background färg*/
+  --font-color-white: #fff;
+}
+
+body {
+  background-color: var(--primaryColor);
+  color: var(--mainText);
+}
+
+a {
+  text-decoration: none;
+}
+

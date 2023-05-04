@@ -1,0 +1,16 @@
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btns .icon {
+  font-size: 2.4rem !important;
+  color: var(--mainIcon) !important;
+  cursor: pointer;
+  
+}
+.icon:hover {
+    color:chartreuse !important;
+    transition: all 0.5s ease-out;
+}

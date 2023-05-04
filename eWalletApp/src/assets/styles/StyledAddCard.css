@@ -1,0 +1,44 @@
+form {
+  width: 60%;
+  margin: 3rem auto;
+  border-radius: 8px;
+  padding: 20px;
+}
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  display: inline-block;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 2px black;
+  box-sizing: border-box;
+}
+.icon {
+  font-size: 4.5rem !important;
+  color: var(--mainIcon) !important;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.icon:hover {
+  color: chartreuse !important;
+  transition: all 0.5s ease-out;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.btn {
+  padding: 0.8rem 3rem;
+  border-radius: 10px;
+  background-color: var(--mainIcon);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: chartreuse;
+  transition:all 0.5s ease-out;
+}

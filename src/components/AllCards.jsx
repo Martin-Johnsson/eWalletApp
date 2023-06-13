@@ -1,13 +1,12 @@
-import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import Card from "./Card";
-import { setActive, deleteCard } from "../redux/CardSlice";
-import "../assets/styles/StyledAllCards.css";
-import { IconButton } from "@material-ui/core";
-import LockOpenIcon from "@material-ui/icons/LockOpen";
-import DeleteForeverIcon from "@material-ui/icons/DeleteForever";
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import Card from './Card';
+import { setActive, deleteCard } from '../redux/CardSlice';
+import '../assets/styles/StyledAllCards.css';
+import { IconButton } from '@material-ui/core';
+import LockOpenIcon from '@material-ui/icons/LockOpen';
+import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 const AllCards = () => {
-  // get the List of cards from the redux store so we can map through and put into the array
   const { cards } = useSelector((state) => state.cards);
   let dispatch = useDispatch();
 
@@ -43,17 +42,17 @@ const AllCards = () => {
                   cvc={card.cvc}
                   focus={card.focus}
                 />
-                <div className="btns">
+                <div className='btns'>
                   <IconButton>
                     <LockOpenIcon
                       onClick={() => handleActiveCard(card)}
-                      className="icon"
+                      className='icon'
                     />
                   </IconButton>
                   <IconButton>
                     <DeleteForeverIcon
                       onClick={() => handleDelete(card.id)}
-                      className="icon"
+                      className='icon'
                     />
                   </IconButton>
                 </div>

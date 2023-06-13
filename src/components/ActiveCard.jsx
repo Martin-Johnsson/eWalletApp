@@ -1,9 +1,14 @@
-import React from "react";
-import { useSelector } from "react-redux";
-import Card from "./Card.jsx";
+import React from 'react';
+import { useSelector } from 'react-redux';
+import Card from './Card.jsx';
+import { Link } from 'react-router-dom';
+import AddCircleIcon from '@material-ui/icons/AddCircle';
+import { useHistory } from 'react-router-dom';
 
 const ActiveCard = () => {
   const { cards } = useSelector((state) => state.cards);
+
+  const history = useHistory();
   return (
     <div>
       <h2>My Active Card</h2>

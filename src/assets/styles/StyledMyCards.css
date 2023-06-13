@@ -8,7 +8,7 @@ main {
   display: flex;
   justify-content: flex-end;
   z-index: 3;
-  margin-top: -15px;
+  margin-top: 15px;
   font-size: 1rem;
 }
 .profil-picture {
@@ -18,12 +18,19 @@ main {
   right: 10px;
 }
 .icon {
-  font-size: 4.5rem !important;
-  color: var(--mainIcon) !important;
+  font-size: 4.5rem;
+  color: var(--mainIcon);
   cursor: pointer;
-  margin-left: 4rem;
 }
 .icon:hover {
-  color: chartreuse !important;
+  color: chartreuse;
   transition: all 0.5s ease-out;
+}
+
+.createCardFlexBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25vw;
+  margin-bottom: 3vw;
 }
